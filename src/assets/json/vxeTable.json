@@ -1,0 +1,34 @@
+{
+  "columns": [
+    {
+      "prop": "FUNCTIONID",
+      "label": "功能ID",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "FUNCTIONNAME",
+      "label": "功能名称",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "FUNCTIONCODE",
+      "label": "功能启动参数",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "FUNCTIONOPCODE",
+      "label": "功能操作码",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "MAINLAUNCH",
+      "label": "功能编号",
+      "fix": false,
+      "filters": []
+    }
+  ]
+}

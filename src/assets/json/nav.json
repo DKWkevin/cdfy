@@ -1,0 +1,28 @@
+{ "fristNav": [
+  {
+    "index": "1",
+    "title": "测试1"
+  }
+  ],
+  "nextNav":[
+  {
+    "index": "1",
+    "title": "管理员",
+    "sub": [
+      {
+        "index": "Mkdy",
+        "title": "模块定义"
+      }
+    ]
+  },
+  {
+    "index": "4",
+    "title": "系统首页2",
+    "sub": [
+      {
+        "index": "Dashboard",
+        "title": "Dashboard"
+      }
+    ]
+  }
+]}

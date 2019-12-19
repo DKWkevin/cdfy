@@ -1,0 +1,54 @@
+@charset "utf-8";
+#queryNav {
+  width:100%;
+  height:100px;
+  margin:0;
+  padding: 0;
+  background: white;
+  border:1px solid #ccc;
+  border-radius: 6px;
+}
+#checkQueryBtn{
+  float:left;
+  margin: 4px;
+}
+.formGroup{
+  float:left;
+}
+.labelTitle{
+  width: auto;
+  float: left;
+  font-size: 13px;
+  margin: 0px 5px 0px 5px;
+  display: inline;
+  color: #000000;
+  line-height: 25px;
+}
+.inputPercent{
+  float:left;
+}
+.formInput{
+  -webkit-appearance: none;
+  background-color: #FFF;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #DCDFE6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  outline: 0;
+  padding: 0 10px;
+  -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  width: 150px;
+  height:28px;
+  line-height: 28px;
+}
+.querySearch{}
+.querySearchActive{
+  width:100%;
+  height:auto;
+  position:relative;
+}

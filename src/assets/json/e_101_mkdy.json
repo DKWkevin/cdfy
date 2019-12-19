@@ -1,0 +1,23 @@
+{
+  "criteriaForm": [
+    {
+      "label": "模块ID",
+      "type": 0,
+      "id":"moduleid",
+      "disabled": false,
+      "width": "100px"
+    },
+    {
+      "label": "模块名称",
+      "type": 0,
+      "id":"modulename",
+      "disabled": false
+    }
+  ],
+  "criteriaData": [
+    {
+      "moduleid": "",
+      "modulename": ""
+    }
+  ]
+}

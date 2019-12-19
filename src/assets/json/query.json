@@ -1,0 +1,109 @@
+{
+  "queryArray": [
+    {
+      "label": "时间",
+      "type": 1,
+      "id": "date",
+      "actvie": false
+    },
+    {
+      "label": "模块ID",
+      "type": 0,
+      "id": "query_moduleid",
+      "actvie": false
+    },
+    {
+      "label": "模块名称",
+      "type": 0,
+      "id": "query_modulename",
+      "actvie": false
+    }
+  ],
+  "querybtn": [
+    {
+      "label": "查询",
+      "id": "query",
+      "type": 1
+    },
+    {
+      "label": "新增",
+      "id": "addDoc",
+      "type": 2
+    }
+  ],
+  "addDoc": [
+    {
+      "label": "模块名称",
+      "type": 0,
+      "id": "modulename",
+      "disabled": false
+    },
+    {
+      "label": "注释",
+      "type": 0,
+      "id": "memo",
+      "disabled": false
+    }
+  ],
+  "addData": {
+    "moduleid": "",
+    "modulename": ""
+  },
+  "columns": [
+    {
+      "prop": "FUNCTIONID",
+      "label": "功能ID",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "FUNCTIONNAME",
+      "label": "功能名称",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "FUNCTIONCODE",
+      "label": "功能启动参数",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "FUNCTIONOPCODE",
+      "label": "功能操作码",
+      "fix": false,
+      "filters": []
+    },
+    {
+      "prop": "MAINLAUNCH",
+      "label": "功能编号",
+      "fix": false,
+      "filters": []
+    }
+  ],
+  "updateDoc": [
+    {
+      "label": "模块id",
+      "type": 0,
+      "id": "moduleid",
+      "disabled": false
+    },
+    {
+      "label": "模块名称",
+      "type": 0,
+      "id": "modulename",
+      "disabled": false
+    },
+    {
+      "label": "注释",
+      "type": 0,
+      "id": "memo",
+      "disabled": false
+    }
+  ],
+  "updateData": {
+    "moduleid": "",
+    "modulename": "",
+    "memo": ""
+  }
+}

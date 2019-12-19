@@ -1,0 +1,123 @@
+/*公共CSS*/
+html,body{margin:0;padding:0;}
+a{text-decoration: none;}
+
+/*header Css*/
+/*左侧导航栏*/
+#app, .wrapper, body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.content-box {
+  position: absolute;
+  left: 220px;
+  right: 0;
+  top: 45px;
+  bottom: 0;
+  padding-bottom: 30px;
+  -webkit-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
+  background: #f0f0f0;
+}
+.content {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.content-collapse {
+  left: 65px;
+}
+
+.tabs {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  background: #fff;
+  padding-right: 120px;
+  box-shadow: 0 5px 10px #ddd;
+}
+
+.tabs ul {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+.tabs-li {
+  float: left;
+  margin: 3px 5px 2px 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 23px;
+  line-height: 23px;
+  border: 1px solid #e9eaec;
+  background: #fff;
+  padding: 0 5px 0 12px;
+  vertical-align: middle;
+  color: #666;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.tabs-li:not(.active):hover {
+  background: #f8f8f8;
+}
+.tabs-li.active {
+  color: #fff;
+}
+.tabs-li-title {
+  float: left;
+  max-width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+  color: #666;
+}
+.tabs-li.active .tabs-li-title {
+  color: #fff;
+}
+.tabs-close-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding-top: 1px;
+  text-align: center;
+  width: 110px;
+  height: 30px;
+  background: #fff;
+  box-shadow: -3px 0 15px 3px rgba(0, 0, 0, .1);
+  z-index: 10;
+}
+.content {
+  width: auto;
+  height:calc(100% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.paginationbox {
+  position: fixed;
+  bottom:0px;
+  width:100%;
+  height:40px;
+}
+.el-pagination{
+  height:40px;
+  width:300px;
+  margin-left: calc(100% / 2 - 270px);
+  margin-top: 5px;
+}

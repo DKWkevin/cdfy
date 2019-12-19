@@ -1,0 +1,53 @@
+{
+  "hovColumn": [
+    {
+      "prop": "employeeid",
+      "label": "人员ID",
+      "height": "20"
+    },
+    {
+      "prop": "employeename",
+      "label": "人员名称",
+      "height": "20"
+    },
+    {
+      "prop": "employeeopcode",
+      "label": "人员操作码",
+      "height": "20"
+    }
+  ],
+  "hovData": [
+    {
+      "prop": "employeeid",
+      "label": "人员ID",
+      "height": "20"
+    },
+    {
+      "prop": "employeename",
+      "label": "人员名称",
+      "height": "20"
+    },
+    {
+      "prop": "employeeopcode",
+      "label": "人员操作码",
+      "height": "20"
+    }
+  ],
+  "hovTerm": [
+    {
+      "id": "employeeid",
+      "label": "人员ID",
+      "height": "20"
+    },
+    {
+      "id": "employeename",
+      "label": "人员名称",
+      "height": "20"
+    },
+    {
+      "id": "employeeopcode",
+      "label": "人员操作码",
+      "height": "20"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+this.$axios.get('/src/assets/json/login.json').then(response => {
+        // var res = JSON.stringify(response.data.data)
+        var res = response.data.data
+        this.$cookieStore.setCookie('username', res.name, 0.1)
+        this.$cookieStore.setCookie('userid', res.id, 0.1)
+        this.$axios.get('https://easy-mock.com/mock/5c072c2a3280fc0aefcf32b1/testProject/route').then(res => {
+          this.$cookieStore.saveObjArr('router', res.data.data.router)
+        })
+        // 跳转到首页
+        this.$router.push('/')
+      }).catch(err => {
+        console.log(err)
+      })
+
+
+
+this.$axios.get('/src/assets/json/login.json').then(response => {
+        // var res = JSON.stringify(response.data.data)
+        var res = response.data.data
+        this.$cookieStore.setCookie('username', res.name, 0.1)
+        this.$cookieStore.setCookie('userid', res.id, 0.1)
+        this.$axios.get('https://easy-mock.com/mock/5c072c2a3280fc0aefcf32b1/testProject/route').then(res => {
+          this.$cookieStore.saveObjArr('router', res.data.data.router)
+        })
+        // 跳转到首页
+        this.$router.push('/')
+      }).catch(err => {
+        console.log(err)
+      })
