@@ -3,7 +3,7 @@
   <div class="puzzle-header">
     <span class="puzzle-header-left">拖动滑块以完成验证</span>
     <div>
-      <span class="el-icon-refresh-right"></span>
+      <span class="el-icon-refresh-right" @click="refreshImg"></span>
     </div>
   </div>
   <div style="position:relative;overflow: hidden" :style="{width: dataWidth + 'px'}">
@@ -11,7 +11,7 @@
       <img id="scream" :style="{width: dataWidth + 'px',height: dataHeight+'px'}" :src="imgRandom">
       <canvas class="puzzle-box" ref="puzzleBox" :width="dataWidth" :height="dataHeight"></canvas>
     </div>
-    <div class="puzzle-lost-box" :style="{width: dataWidth + 'px',height: dataHeight+'px'}">
+    <div class="puzzle-lost-box" :style="{left: leftNum+'px',width: dataWidth + 'px',height: dataHeight+'px'}">
       <canvas class="puzzle-shadow" ref="puzzleShadow" :width="dataWidth" :height="dataHeight"></canvas>
       <canvas class="puzzle-lost" ref="puzzleLost" :width="dataWidth" :height="dataHeight"></canvas>
     </div>
@@ -69,7 +69,7 @@ export default {
       padding: null,
       randomX: null,
       randomY: null,
-      leftNum: null,
+      leftNum: 0,
       radius: null,
       imgRandom: ''
     }
@@ -88,6 +88,14 @@ export default {
     this.padding = Number(this.wrapperPadding)
   },
   methods: {
+    clearCanvas () {
+      let c = this.$refs.puzzleBox
+      let cl = this.$refs.puzzleLost
+      let cs = this.$refs.puzzleShadow
+      c.setAttribute('height', c.getAttribute('height'))
+      cl.setAttribute('height', cl.getAttribute('height'))
+      cs.setAttribute('height', cs.getAttribute('height'))
+    },
     init () {
       this.clearCanvas()
       let w = this.dataWidth
@@ -179,13 +187,8 @@ export default {
       ctxs.shadowColor = 'black'
       ctxs.fill()
     },
-    clearCanvas () {
-      let c = this.$refs.puzzleBox
-      let cl = this.$refs.puzzleLost
-      let cs = this.$refs.puzzleShadow
-      c.setAttribute('height', c.getAttribute('height'))
-      cl.setAttribute('height', cl.getAttribute('height'))
-      cs.setAttribute('height', cs.getAttribute('height'))
+    refreshImg () {
+      this.init()
     }
   }
 }
